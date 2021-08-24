@@ -1,6 +1,6 @@
 <template>
-  <div class="col-md-4 ">
-    <div class="card mb-4 shadow-sm bg-white">
+  <div class="col-md-4  ">
+    <div class="card border-dark border-5 rounded-lg mb-4 shadow-sm bg-light">
        <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
       -  <--<title>Placeholder</title>
         <rect width="100%" height="100%" fill="#55595c"/>
@@ -8,7 +8,7 @@
       </svg>-->
        <img class="bd-placeholder-img card-img-top"  width="100%" height="400" :src="coffeeData.image" alt="Image-coffee">
       <div class="card-body">
-        <p class="card-text">{{coffeeData.name}}</p>
+        <h4 class="card-title text-center font-weight-bold">{{coffeeData.name}}</h4>
         <ul>
           <!-- propriedades do café -->
           <li v-for="char in coffeeData.characteristics" :key="char">
